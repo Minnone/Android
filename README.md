@@ -44,3 +44,5 @@
 3. С **Экрана плейлиста** предусмотрена кнопка возврата "к списку исполнителей"
 
 Все переходы анимированы с использованием эффекта "Smart Animate".
+
+Project link- https://www.figma.com/proto/eZcAjG2bSGZ3D9WVDYulit?node-id=0-1&t=2TzVR2orlgIHLXO6-6
