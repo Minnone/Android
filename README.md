@@ -1,16 +1,16 @@
-# flutter_application_1
+Практическое занятие №4 Способы компоновки элементов и контейнеры. Обработка событий. Управление состоянием. Обновление состояния виджетов при нажатии кнопок или других событиях. 
 
-A new Flutter project.
+ЭФБО-09-23 Малыгин Артём
 
-## Getting Started
+В приложении использовались виджеты Scaffold, Center, Column, Text, ElevatedButton и Container. Text стилизован с помощью размера шрифта, жирности и цвета. Кнопка оформлена с скруглёнными углами, цветом фона и текста, внутренними отступами. Контейнер имеет заданные размеры, цвет фона и центрированный текст.
 
-This project is a starting point for a Flutter application.
+Скриншот работающего приложения с кнопками и счётчиком.
+<img width="720" height="1285" alt="image" src="https://github.com/user-attachments/assets/e5ab54dd-2b72-4b3b-bbf7-b719a82b5aaf" />
+<img width="719" height="1269" alt="image" src="https://github.com/user-attachments/assets/8c55ff33-a459-4d85-a359-b1991b6f0af5" />
+<img width="713" height="1278" alt="image" src="https://github.com/user-attachments/assets/a6e70e4b-1727-4ea3-8259-c8e59d587699" />
 
-A few resources to get you started if this is your first Flutter project:
+Основные виджеты: MaterialApp - корневой виджет Material Design Scaffold - базовая структура экрана AppBar - верхняя панель с заголовком StatefulWidget - виджет с состоянием (CounterScreen) Column - вертикальное расположение элементов Text - отображение значения счетчика ElevatedButton - интерактивные кнопки Container - контейнеры для стилизции кнопок Padding - отступы вокруг элементов SizedBox - фиксированные промежутки между элементами Row - горизонтальное расположение внутри контейнеров
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Реализация состояния StatefulWidget создает экземпляр состояния Переменная _counter хранит текущее значение Метод setState() уведомляет фреймворк о необходимости перерисовки Flutter перестраивает виджет с новыми данными Интерфейс автоматически обновляется
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Обрабатываемые события Кнопка "Увеличить": onPressed - обычное нажатие: _incrementCounter() // _counter++ onLongPress - долгое нажатие: _incrementByTen() // _counter += 10 Кнопка "Сбросить": onPressed - обычное нажатие: _resetCounter() // _counter = 0
