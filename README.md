@@ -1,16 +1,69 @@
-# flutter_application_5
+Практическое занятие №5. Работа со списками и передача данных между модулями
+Студент: ЭФБО-09-23 Малыгин Артём Валерьевич
 
-A new Flutter project.
+Цели работы
+Освоить отображение коллекций данных с использованием ListView.builder
+Изучить базовую навигацию между экранами (Navigator.push / Navigator.pop)
+Научиться передавать данные через конструктор
+Реализовать функционал добавления, редактирования и удаления элементов списка
 
-## Getting Started
+Ход работы
+Шаг 1. Модель данных
+В файле lib/models/note.dart создан класс Note для хранения информации о заметках:
 
-This project is a starting point for a Flutter application.
+dart
+class Note {
+  final String id;
+  String title;
+  String body;
 
-A few resources to get you started if this is your first Flutter project:
+  Note({required this.id, required this.title, required this.body});
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  Note copyWith({String? title, String? body}) => Note(
+    id: id,
+    title: title ?? this.title,
+    body: body ?? this.body,
+  );
+}
+Шаг 2. Главный экран со списком заметок
+В main.dart реализован экран NotesPage с отображением списка заметок через ListView.builder. Каждый элемент представлен в виде карточки с закругленными углами, отступами и иконкой удаления.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Основные элементы:
+
+ListView.builder для эффективного отображения списка
+
+Dismissible для реализации свайп-удаления
+
+Card и ListTile для оформления элементов
+
+Шаг 3. Добавление и редактирование заметок
+Создан экран EditNotePage (edit_note_page.dart) с формой для создания и редактирования заметок:
+
+Для новых заметок генерируется уникальный ID
+
+Для существующих заметок используется метод copyWith для обновления
+
+Валидация формы перед сохранением
+
+Шаг 4. Удаление заметок
+Реализовано два способа удаления:
+
+Кнопка удаления в виде иконки корзины
+
+Свайп-жест с анимацией удаления
+
+Шаг 5. Поиск по заметкам
+Добавлен функционал поиска через SearchDelegate с фильтрацией по заголовкам заметок. Поиск вызывается через иконку в AppBar.
+
+Результат
+Разработано полнофункциональное приложение для управления заметками с возможностями:
+
+Просмотра списка заметок
+
+Добавления новых заметок
+
+Редактирования существующих записей
+
+Удаления элементов
+
+Поиска по содержимому
