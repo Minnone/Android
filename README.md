@@ -5,10 +5,10 @@
 ## Скриншоты экранов
 
 ### аутентификации
-<img width="220" height="300" alt="image" src="https://github.com/user-attachments/assets/677ed227-6c58-4f1a-b029-02e25c7d7aa0" />
-<img width="220" height="300" alt="image" src="https://github.com/user-attachments/assets/8951640f-1e00-4a85-b310-14520e76fd3a" />
-<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/28a16ed4-e7f2-4ddd-bcfd-bf5cec3d3929" />
-<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/da0c94c1-7a85-4c02-bbf1-54323c0bb4be" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/677ed227-6c58-4f1a-b029-02e25c7d7aa0" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/8951640f-1e00-4a85-b310-14520e76fd3a" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/28a16ed4-e7f2-4ddd-bcfd-bf5cec3d3929" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/da0c94c1-7a85-4c02-bbf1-54323c0bb4be" />
 
 
 
