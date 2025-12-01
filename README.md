@@ -5,10 +5,10 @@
 ## Скриншоты экранов
 
 ### аутентификации
-<img width="821" height="1825" alt="image" src="https://github.com/user-attachments/assets/677ed227-6c58-4f1a-b029-02e25c7d7aa0" />
-<img width="811" height="1808" alt="image" src="https://github.com/user-attachments/assets/8951640f-1e00-4a85-b310-14520e76fd3a" />
-<img width="807" height="1812" alt="image" src="https://github.com/user-attachments/assets/28a16ed4-e7f2-4ddd-bcfd-bf5cec3d3929" />
-<img width="818" height="1814" alt="image" src="https://github.com/user-attachments/assets/da0c94c1-7a85-4c02-bbf1-54323c0bb4be" />
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/677ed227-6c58-4f1a-b029-02e25c7d7aa0" />
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/8951640f-1e00-4a85-b310-14520e76fd3a" />
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/28a16ed4-e7f2-4ddd-bcfd-bf5cec3d3929" />
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/da0c94c1-7a85-4c02-bbf1-54323c0bb4be" />
 
 
 
@@ -17,9 +17,9 @@
 
 | Shop Screen | Favourites | Cart Screen |
 |-------------|------------|-------------|
-<img width="806" height="1810" alt="image" src="https://github.com/user-attachments/assets/0b206a4d-9e88-4ba8-9acd-7a817fc379e4" />
-<img width="817" height="1823" alt="image" src="https://github.com/user-attachments/assets/fd074689-5163-4a30-a648-df925cc4c7cf" />
-<img width="815" height="1814" alt="image" src="https://github.com/user-attachments/assets/abab9d50-8d56-4010-afff-f9d1dccb2751" />
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/0b206a4d-9e88-4ba8-9acd-7a817fc379e4" />
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/fd074689-5163-4a30-a648-df925cc4c7cf" />
+<img width="250" height="300" alt="image" src="https://github.com/user-attachments/assets/abab9d50-8d56-4010-afff-f9d1dccb2751" />
 
 ### Аутентификация Flow:
 `Splash Screen → Create Account → Login → Password → Main App`
