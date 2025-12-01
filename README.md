@@ -2,14 +2,12 @@
 
 Красивое и современное мобильное приложение для шопинга с продуманным UI/UX и плавными переходами между экранами.
 
-## 📱 Скриншоты экранов
+## Скриншоты экранов
 
-### 🔄 Последовательность аутентификации
+### аутентификации
+![Uploading image.png…]()
 
-| Splash Screen | Create Account | Login Screen | Password Screen |
-|---------------|----------------|--------------|-----------------|
-| <img width="300" height="450" alt="Снимок экрана 2025-10-21 в 16 57 28" src="![Uploading image.png…]()
-"> | <img width="300" height="450" alt="Снимок экрана 2025-10-21 в 16 57 34" src="https://github.com/user-attachments/assets/0c8c5ae5-fdc5-4f12-964a-59032cf9ccf0"> | <img width="300" height="450" alt="Снимок экрана 2025-10-21 в 16 57 39" src="https://github.com/user-attachments/assets/07389dea-595a-4a34-8a2d-00e95f176ace"> | <img width="300" height="450" alt="Снимок экрана 2025-10-21 в 16 57 45" src="https://github.com/user-attachments/assets/5243425e-0881-4c4b-b653-41287d5595f5"> |
+
 
 ### 🏪 Основные экраны приложения
 
