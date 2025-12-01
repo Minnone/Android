@@ -1,4 +1,6 @@
-# 🛍️ Flutter Shopping App
+## практическая работа №6
+
+###Малыгин Артём Валерьевич ЭФБО-09-23
 
 Красивое и современное мобильное приложение для шопинга с продуманным UI/UX и плавными переходами между экранами.
 
@@ -13,10 +15,7 @@
 
 
 
-### 🏪 Основные экраны приложения
-
-| Shop Screen | Favourites | Cart Screen |
-|-------------|------------|-------------|
+###  Основные экраны приложения
 <img width="180" height="300" alt="image" src="https://github.com/user-attachments/assets/0b206a4d-9e88-4ba8-9acd-7a817fc379e4" />
 <img width="180" height="300" alt="image" src="https://github.com/user-attachments/assets/fd074689-5163-4a30-a648-df925cc4c7cf" />
 <img width="180" height="300" alt="image" src="https://github.com/user-attachments/assets/abab9d50-8d56-4010-afff-f9d1dccb2751" />
