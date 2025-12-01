@@ -4,137 +4,115 @@ import '../../styles/app_colors.dart';
 
 class PasswordScreen extends StatelessWidget {
   const PasswordScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white, // Соответствует белому фону в Figma
       body: Stack(
         children: [
+// Бабл слева сверху, не полный экран
           Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
+            top: -100, // Сдвиг вверх для organic формы
+            left: -100,
             child: Image.asset(
               'assets/images/password_bubbles.png',
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height / 2.5, 
-              fit: BoxFit.cover,
+              width: MediaQuery.of(context).size.width * 0.8,
+              height: MediaQuery.of(context).size.height * 0.4,
+              fit: BoxFit.contain,
             ),
           ),
-          
+// Текст "Hello!" и "Type your password" слева в центре
           Positioned(
-            left: 20,
-            right: 20,
-            top: 150, 
+            left: 24,
+            top: MediaQuery.of(context).size.height * 0.25,
             child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Заголовок
                 const Text(
                   'Hello!',
                   style: TextStyle(
-                    fontSize: 36, 
-                    fontWeight: FontWeight.w800, 
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
                     color: AppColors.textDark,
                   ),
                 ),
-                const SizedBox(height: 30),
-                
+                const SizedBox(height: 8),
                 const Text(
                   'Type your password',
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 16,
                     color: AppColors.textLight,
                   ),
                 ),
               ],
             ),
           ),
+// Форма снизу
           Positioned(
-            left: 20,
-            right: 20,
-            bottom: 84,
+            left: 24,
+            right: 24,
+            bottom: 100, // Поднят для match позиции в Figma
             child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TextField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    hintText: 'Password',
-                    filled: true, 
-                    fillColor: const Color(0xFFF5F5F5), 
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide.none, 
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide.none,
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20),
-                      borderSide: const BorderSide(color: AppColors.primary, width: 2),
-                    ),
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-                    hintStyle: const TextStyle(
-                      color: AppColors.textLight,
-                    ),
-                    suffixIcon: Padding(
-                      padding: const EdgeInsets.only(right: 16),
-                      child: SvgPicture.asset(
-                        'assets/images/eye-slash.svg',
-                        width: 15,
-                        height: 15,
-                        colorFilter: ColorFilter.mode(
-                          AppColors.textLight,
-                          BlendMode.srcIn,
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(24),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.05),
+                        blurRadius: 8,
+                        offset: const Offset(0, 2),
+                      ),
+                    ],
+                  ),
+                  child: TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      hintText: 'Password',
+                      hintStyle: const TextStyle(color: AppColors.textLight),
+                      border: InputBorder.none,
+                      contentPadding: const EdgeInsets.symmetric(
+                          horizontal: 24, vertical: 16),
+                      suffixIcon: Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: SvgPicture.asset(
+                          'assets/images/eye-slash.svg',
+                          colorFilter: const ColorFilter.mode(
+                              AppColors.textLight, BlendMode.srcIn),
                         ),
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(height: 83),
-                
+                const SizedBox(height: 32),
                 SizedBox(
                   width: double.infinity,
-                  height: 61,
                   child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF004CFF), 
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20), 
-                      ),
-                      elevation: 0, 
-                    ),
                     onPressed: () {
                       Navigator.pushReplacementNamed(context, '/main');
                     },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.primary,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(24)),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                    ),
                     child: const Text(
                       'Start',
                       style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
-                      ),
+                          fontSize: 16,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
-                const SizedBox(height: 14),
-                
-                Center(
-                  child: TextButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    child: const Text(
-                      'Cancel',
-                      style: TextStyle(
-                        color: AppColors.primary,
-                        fontSize: 16,
-                      ),
-                    ),
+                const SizedBox(height: 16),
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: const Text(
+                    'Cancel',
+                    style: TextStyle(color: AppColors.primary, fontSize: 16),
                   ),
                 ),
               ],
