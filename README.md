@@ -1,16 +1,36 @@
-# flutter_application_5
+Практическое занятие № 8 Работа с базами данных. Подключение приложения к Firebase
+ЭФБО-09-23 Малыгин Артём
+Цели:
 
-A new Flutter project.
+Подключить Flutter-приложение к Firebase через FlutterFire CLI.
+Освоить инициализацию firebase_core и работу с Cloud Firestore (cloud_firestore).
+Реализовать базовый CRUD (создание, чтение в реальном времени, обновление, удаление) для коллекции данных.
+Настроить минимальные правила безопасности Firestore для учебной среды.
+Сформировать практические навыки диагностики и устранения типовых ошибок подключения.
+Ход работы:
+Скриншот настроенного проекта Firebase
+<img width="2727" height="1695" alt="image" src="https://github.com/user-attachments/assets/a60c56dd-c72a-4994-9751-7bee003bbc9d" />
 
-## Getting Started
+Скриншот запущенного приложения с отображением списка.
+<img width="700" height="1290" alt="image" src="https://github.com/user-attachments/assets/6742fef2-bb50-4c7a-8e43-8cf3d28deeb0" />
 
-This project is a starting point for a Flutter application.
+Выводы
+В ходе выполнения практической работы я изучил процесс подключения Flutter-приложения к облачной платформе Firebase и освоил основы работы с базой данных Cloud Firestore.
 
-A few resources to get you started if this is your first Flutter project:
+Были выполнены следующие шаги:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+создан новый проект Flutter и успешно привязан к Firebase через FlutterFire CLI;
+установлены и настроены пакеты firebase_core и cloud_firestore;
+реализована инициализация Firebase при запуске приложения;
+разработан экран для выполнения операций CRUD (создание, чтение, обновление, удаление) в коллекции notes;
+настроены тестовые правила безопасности Firestore и проверена их работа;
+протестирована синхронизация данных в реальном времени между приложением и базой данных.
+В результате работы было создано полноценное приложение для заметок, в котором все изменения мгновенно отображаются в интерфейсе пользователя благодаря реактивной модели Firestore.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Также было отмечено, что использование Firebase значительно упрощает разработку и избавляет от необходимости вручную разрабатывать серверную часть, что особенно полезно для учебных, MVP- и прототипных проектов.
+
+Для промышленной эксплуатации необходимо:
+
+подключить аутентификацию пользователей (firebase_auth) (сделано);
+ужесточить правила безопасности (allow read, write: if request.auth != null;) (сделано);
+предусмотреть валидацию данных и обработку ошибок (сделано).
