@@ -17,7 +17,6 @@
 Добавление
 
 <img width="873" height="55" alt="Снимок экрана 2025-12-21 214553" src="https://github.com/user-attachments/assets/fbbfd038-0f13-4deb-b910-64434f380757" />
-<img width="1017" height="57" alt="Снимок экрана 2025-12-21 214626" src="https://github.com/user-attachments/assets/310d819f-7376-4c2a-8212-cfcb002c8692" />
 <img width="704" height="1282" alt="Снимок экрана 2025-12-21 214632" src="https://github.com/user-attachments/assets/10341399-b77f-47e7-9d49-2d33222500d9" />
 
 
@@ -30,3 +29,4 @@
 удаление
 
 
+<img width="1017" height="57" alt="Снимок экрана 2025-12-21 214626" src="https://github.com/user-attachments/assets/310d819f-7376-4c2a-8212-cfcb002c8692" />
