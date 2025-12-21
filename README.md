@@ -1,4 +1,4 @@
-Малыгин Артём Валерьевич
+<img width="726" height="1333" alt="Снимок экрана 2025-12-21 214558" src="https://github.com/user-attachments/assets/0f0856ef-8e9d-41a1-b184-8d7fc3f0acc5" />Малыгин Артём Валерьевич
 ЭФБО-09-23
 
 Цели:
@@ -17,7 +17,9 @@
 Добавление
 
 <img width="873" height="55" alt="Снимок экрана 2025-12-21 214553" src="https://github.com/user-attachments/assets/fbbfd038-0f13-4deb-b910-64434f380757" />
-![Uploading Снимок экрана 2025-12-21 214558.png…]()
+
+<img width="726" height="1333" alt="Снимок экрана 2025-12-21 214558" src="https://github.com/user-attachments/assets/09790a45-9563-4b00-9645-1479b18656e0" />
+
 
 
 редактирование
