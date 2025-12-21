@@ -17,6 +17,7 @@
 Добавление
 
 <img width="873" height="55" alt="Снимок экрана 2025-12-21 214553" src="https://github.com/user-attachments/assets/fbbfd038-0f13-4deb-b910-64434f380757" />
+![Uploading Снимок экрана 2025-12-21 214558.png…]()
 
 
 редактирование
